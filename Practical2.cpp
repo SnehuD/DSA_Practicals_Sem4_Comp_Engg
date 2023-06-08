@@ -155,16 +155,23 @@ int main() {
     cin >> ans;
   } while (ans == 'y' || ans == 'Y');
 }
-/* A hashing function is a crucial component of a hash table, as it determines the mapping of keys to indices in the hash table. Here are some key points about hashing functions:
 
+/* A hashing function is a crucial component of a hash table, 
+as it determines the mapping of keys to indices in the hash table. 
+
+Here are some key points about hashing functions:
 Purpose:
 
 The primary purpose of a hashing function is to convert a given key into a hash code or hash value.
 The hash code is used as an index to store or retrieve data in a hash table.
-A good hashing function aims to evenly distribute keys across the available indices, reducing the number of collisions. 
+A good hashing function aims to evenly distribute keys across the available indices, 
+reducing the number of collisions. 
 Abstract Data Type (ADT):
 
-An Abstract Data Type defines a set of operations or functionalities that can be performed on a data structure. It specifies what operations are available and what the behavior of those operations should be. In the context of a dictionary or set implementation using hashing, the ADT may include the following:
+An Abstract Data Type defines a set of operations or functionalities that can be performed on a data structure.
+It specifies what operations are available and what the behavior of those operations should be. 
+In the context of a dictionary or set implementation using hashing, 
+the ADT may include the following:
 
 Initialization: Create and initialize a new dictionary or set.
 Insertion: Insert a new key-value pair or element into the dictionary or set.
@@ -174,20 +181,26 @@ Size: Determine the number of elements or key-value pairs in the dictionary or s
 Iteration: Traverse through all the elements or key-value pairs in the dictionary or set.
 Set:
 
-A set is a collection of unique elements, where each element appears only once. Here are some key points about sets:
+A set is a collection of unique elements, where each element appears only once. 
+Here are some key points about sets:
 
 Uniqueness: Sets only contain unique elements, eliminating duplicates.
 Order: The elements in a set have no specific order.
-Membership: A set provides efficient membership testing, allowing quick determination of whether an element is present or not.
-Set Operations: Sets support various operations, such as union, intersection, difference, and symmetric difference, among others.
+Membership: A set provides efficient membership testing, allowing quick determination of whether an element 
+is present or not.
+Set Operations: Sets support various operations, such as union, intersection, difference, 
+and symmetric difference, among others.
 Set Operations:
 
 Union: Combines two sets to create a new set containing all the unique elements from both sets.
 Intersection: Creates a new set containing the elements that are common to both sets.
 Difference: Creates a new set that includes the elements present in one set but not in the other.
-Subset: Checks if one set is a subset of another, meaning that all the elements of one set are also present in the other set.
-Superset: Checks if one set is a superset of another, meaning that all the elements of the other set are also present in the first set.
-Symmetric Difference: Creates a new set that includes the elements that are present in either of the sets but not in both.
+Subset: Checks if one set is a subset of another, meaning that all the elements of one set are 
+also present in the other set.
+Superset: Checks if one set is a superset of another, meaning that all the elements of the other 
+set are also present in the first set.
+Symmetric Difference: Creates a new set that includes the elements that are present in either of 
+the sets but not in both.
 
 */
 
