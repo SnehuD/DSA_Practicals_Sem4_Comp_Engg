@@ -91,10 +91,14 @@ int main() {
   return 0;
 }
 /* Minimum Spanning Tree (MST):
-A Minimum Spanning Tree is a subgraph of a connected, weighted graph that connects all the vertices with the minimum possible total edge weight. In other words, it is a tree that spans all the vertices of the graph while minimizing the sum of the edge weights.
+A Minimum Spanning Tree is a subgraph of a connected, weighted graph that connects 
+all the vertices with the minimum possible total edge weight. 
+In other words, it is a tree that spans all the vertices of the graph while minimizing the 
+sum of the edge weights.
 
 Finding the Minimum Spanning Tree:
-There are two commonly used algorithms to find the Minimum Spanning Tree: Kruskal's algorithm and Prim's algorithm.
+There are two commonly used algorithms to find the Minimum Spanning Tree: 
+Kruskal's algorithm and Prim's algorithm.
 
 Kruskal's Algorithm:
 1. Sort all the edges of the graph in non-decreasing order of their weights.
@@ -111,54 +115,13 @@ Prim's Algorithm:
 3. The resulting graph is the Minimum Spanning Tree.
 
 Kruskal's vs. Prim's Algorithm:
-- Kruskal's algorithm is based on sorting the edges and adding them one by one, considering whether they create a cycle or not. It works well for sparse graphs.
-- Prim's algorithm is based on selecting the minimum weight edges from a starting vertex and growing the tree until all vertices are visited. It works well for dense graphs.
+- Kruskal's algorithm is based on sorting the edges and adding them one by one, 
+considering whether they create a cycle or not. It works well for sparse graphs.
+- Prim's algorithm is based on selecting the minimum weight edges from a starting vertex and 
+growing the tree until all vertices are visited. It works well for dense graphs.
 
-Both algorithms guarantee the construction of a Minimum Spanning Tree. The choice between Kruskal's and Prim's algorithm depends on factors such as the graph's density, implementation constraints, and edge weight distribution.
-Kruskal's Algorithm:
-
-Sort all the edges of the graph in non-decreasing order of their weights.
-Start with an empty graph and add edges to it in increasing order of weights.
-Add an edge to the graph if it does not create a cycle.
-Repeat step 3 until there are V-1 edges in the graph (V is the number of vertices).
-The resulting graph is the Minimum Spanning Tree.
-Prim's Algorithm:
-
-Start with an arbitrary vertex and mark it as visited.
-Repeat the following steps until all vertices are visited:
-Choose the minimum weight edge that connects a visited vertex to an unvisited vertex.
-Mark the unvisited vertex as visited and add the edge to the Minimum Spanning Tree.
-The resulting graph is the Minimum Spanning Tree.
-Kruskal's vs. Prim's Algorithm:
-
-Kruskal's algorithm is based on sorting the edges and adding them one by one, considering whether they create a cycle or not. It works well for sparse graphs.
-Prim's algorithm is based on selecting the minimum weight edges from a starting vertex and growing the tree until all vertices are visited. It works well for dense graphs.
-Both algorithms guarantee the construction of a Minimum Spanning Tree. The choice between Kruskal's and Prim's algorithm depends on factors such as the graph's density, implementation constraints, and edge weight distribution.
-
-
-
-
-
-User
-Kruskal's vs. Prim's Algorithm: 5 steps algo
-Kruskal's Algorithm:
-
-Create a disjoint set for each vertex in the graph, where each set contains only one vertex.
-Sort all the edges of the graph in non-decreasing order of their weights.
-Iterate through the sorted edges and for each edge:
-Check if adding the edge to the Minimum Spanning Tree will create a cycle. This can be done by checking if the two vertices of the edge belong to the same disjoint set.
-If the vertices are in different sets, merge the sets by performing a union operation and add the edge to the Minimum Spanning Tree.
-Repeat step 3 until all edges have been processed or the Minimum Spanning Tree has V-1 edges (V is the number of vertices).
-The resulting graph is the Minimum Spanning Tree.
-Prim's Algorithm:
-
-Start with an arbitrary vertex as the starting point.
-Create a priority queue (min-heap) to store the edges with their weights.
-Initialize an array to keep track of the minimum weight edge connected to each vertex. Set all the values to infinity except for the starting vertex, which is set to 0.
-Repeat the following steps until all vertices are visited:
-Extract the edge with the minimum weight from the priority queue.
-Check if the other end of the edge has been visited. If not, add the edge to the Minimum Spanning Tree and mark the vertex as visited.
-Update the minimum weight edge of the unvisited neighbors of the newly visited vertex if the weight of the edge is smaller.
-The resulting graph is the Minimum Spanning Tree. */
+Both algorithms guarantee the construction of a Minimum Spanning Tree. 
+The choice between Kruskal's and Prim's algorithm depends on factors such as the graph's density, 
+implementation constraints, and edge weight distribution.
 
 //-----SnehuD-----
