@@ -138,7 +138,10 @@ int main() {
 }
 
 /* iostream Library:
-The iostream library in C++ provides input and output functionalities through the standard streams: cin, cout, cerr, and clog. It includes the necessary classes and functions for reading from and writing to the console, files, and other input/output devices.
+The iostream library in C++ provides input and output functionalities through the standard streams: 
+cin, cout, cerr, and clog. 
+It includes the necessary classes and functions for reading from and writing to the console, 
+files, and other input/output devices.
 
 Data Types:
 The iostream library supports various data types for input and output operations, including:
@@ -151,7 +154,10 @@ The iostream library supports various data types for input and output operations
 6. bool: Represents boolean values (true or false).
 
 Opening File and Mode Flags:
-To work with files, the iostream library provides functionality to open files with specific modes using the ofstream and ifstream classes. The mode flags specify the intended file operations. Some commonly used mode flags include:
+To work with files, the iostream library provides functionality to open files with specific modes 
+using the ofstream and ifstream classes. 
+The mode flags specify the intended file operations. 
+Some commonly used mode flags include:
 
 1. ios::in: Open the file for reading.
 2. ios::out: Open the file for writing.
@@ -161,12 +167,17 @@ To work with files, the iostream library provides functionality to open files wi
 6. ios::ate: Set the initial position of the file pointer to the end of the file.
 
 Return Value and Meaning:
-The functions in the iostream library often return a value indicating the success or failure of the operation. Some commonly used return values and their meanings include:
+The functions in the iostream library often return a value indicating the success or failure of the operation. 
+Some commonly used return values and their meanings include:
 
-1. cin >> value: Returns a reference to the input stream (cin). It is typically used for chained input operations.
-2. cout << value: Returns a reference to the output stream (cout). It is typically used for chained output operations.
-3. ifstream::open: Returns a boolean value (true or false). It indicates whether the file was successfully opened or not.
-4. ofstream::open: Returns a boolean value (true or false). It indicates whether the file was successfully created or not.
+1. cin >> value: Returns a reference to the input stream (cin). 
+It is typically used for chained input operations.
+2. cout << value: Returns a reference to the output stream (cout). 
+It is typically used for chained output operations.
+3. ifstream::open: Returns a boolean value (true or false). 
+It indicates whether the file was successfully opened or not.
+4. ofstream::open: Returns a boolean value (true or false). 
+It indicates whether the file was successfully created or not.
 5. getline: Returns the input stream (cin) after extracting the line of characters from the input.
 
 These return values can be used for error handling or to check the status of input/output operations.
