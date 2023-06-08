@@ -1,5 +1,5 @@
 /* . Consider telephone book database of N clients. Make use of a hash table 
-implementation to quickly lookupclient ‘stelephonenumber. Makeuseoftwo collision 
+implementation to quickly lookupclient â€˜stelephonenumber. Makeuseoftwo collision 
 handling techniques and compare them using number of comparisons required to find 
 a set of telephone numbers */
 #include <iostream>
@@ -168,32 +168,39 @@ Hash Table:
 
 A hash table is a data structure that provides efficient insertion, deletion, and retrieval operations.
 It is based on the concept of hashing, which maps keys to indices in an array for quick access to stored values.
-The array used in a hash table is often called the "hash table" or "hash array," and each index is referred to as a "bucket" or "slot."
-The size of the hash table is typically determined based on the expected number of elements and the desired load factor.
+The array used in a hash table is often called the "hash table" or "hash array," and 
+each index is referred to as a "bucket" or "slot."
+The size of the hash table is typically determined based on the expected number of elements and 
+the desired load factor.
+
 Hashing Function:
 
 A hashing function is used to convert a given key (e.g., client name) into an index within the hash table.
 The hashing function should distribute keys uniformly across the available indices to minimize collisions.
 An ideal hashing function ensures a good distribution of keys and minimizes the number of collisions.
-Basic Operations:
 
+Basic Operations:
 Insertion:
 
 The key-value pair is hashed to compute the index where the value will be stored.
 If the index is already occupied (collision occurs), the collision handling technique is applied.
 The value is inserted at the appropriate index using the chosen collision handling technique.
+
 Retrieval:
 
 The key is hashed to determine the index where the value should be located.
 If the index contains the desired value, it is returned.
-If the index is empty or contains a different value, collision resolution techniques are applied to find the correct value.
+If the index is empty or contains a different value, collision resolution techniques 
+are applied to find the correct value.
+
 Deletion:
 
 The key is hashed to compute the index where the value is expected to be stored.
 If the index contains the desired value, it is removed from the hash table.
-If the index is empty or contains a different value, collision resolution techniques are used to locate and delete the correct value.
-Types of Collision Handling Techniques:
+If the index is empty or contains a different value, collision resolution techniques are 
+used to locate and delete the correct value.
 
+Types of Collision Handling Techniques:
 Chaining:
 
 In chaining, each index in the hash table stores a linked list of elements that hash to the same index.
@@ -203,10 +210,15 @@ Retrieval involves traversing the linked list at the computed index to find the 
 
 Open Addressing:
 
-In open addressing, all elements are stored directly in the hash table itself, without using additional data structures like linked lists.
-When a collision occurs, an alternative location (often determined by a probing sequence) is found within the hash table to store the collided element.
-Probing sequences can be linear probing (incrementing by a constant value), quadratic probing (incrementing by square of an offset), or double hashing (using a second hash function).
-Retrieval involves following the probing sequence until the desired value is found or an empty slot is encountered. */
+In open addressing, all elements are stored directly in the hash table itself, 
+without using additional data structures like linked lists.
+When a collision occurs, an alternative location (often determined by a probing sequence) 
+is found within the hash table to store the collided element.
+Probing sequences can be linear probing (incrementing by a constant value), 
+quadratic probing (incrementing by square of an offset), 
+or double hashing (using a second hash function).
+Retrieval involves following the probing sequence until the desired value is found 
+or an empty slot is encountered. */
 
 
 //-----SnehuD-----
