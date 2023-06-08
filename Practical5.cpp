@@ -98,24 +98,48 @@ int main() {
   t.non_rec_postorder(t.top);
   t.del(t.top);
 }
+
 /* Threaded Binary Tree:
-A threaded binary tree is a binary tree in which every node contains either a thread or a link to its predecessor or successor. The threads provide an efficient way to traverse the tree without using recursion or stacks. The threads represent the next and previous nodes in the in-order traversal sequence.
+A threaded binary tree is a binary tree in which every node contains either a thread 
+or a link to its predecessor or successor. The threads provide an efficient way to traverse 
+the tree without using recursion or stacks. The threads represent the next and previous nodes 
+in the in-order traversal sequence.
 
 Types of Threaded Binary Trees:
-1. Single Threaded Binary Tree: In a single threaded binary tree, each node is threaded towards either its in-order predecessor or successor.
-2. Double Threaded Binary Tree: In a double threaded binary tree, each node is threaded towards both its in-order predecessor and successor.
+1. Single Threaded Binary Tree: 
+	In a single threaded binary tree, each node is threaded towards either its in-order 
+	predecessor or successor.
+2. Double Threaded Binary Tree: 
+	In a double threaded binary tree, each node is threaded towards both its in-order 
+	predecessor and successor.
 
 Advantages of Threaded Binary Trees:
-1. Efficient In-order Traversal: Threaded binary trees provide a way to traverse the tree in in-order sequence without using recursion or stacks, resulting in better efficiency and reduced memory consumption.
-2. Simplified Tree Operations: Threaded binary trees simplify operations like searching for the next or previous node, as the threads provide direct links to these nodes.
-3. Space Efficiency: Threaded binary trees save space by utilizing the null pointers to store thread information instead of explicit left and right child pointers.
+1. Efficient In-order Traversal: 
+	Threaded binary trees provide a way to traverse the tree in in-order sequence 
+	without using recursion or stacks, resulting in better efficiency and reduced memory consumption.
+2. Simplified Tree Operations: 
+	Threaded binary trees simplify operations like searching for the next or previous node, 
+	as the threads provide direct links to these nodes.
+3. Space Efficiency: 
+	Threaded binary trees save space by utilizing the null pointers to store thread information 
+	instead of explicit left and right child pointers.
 
 Disadvantages of Threaded Binary Trees:
-1. Complexity of Construction: Constructing a threaded binary tree requires additional steps compared to a regular binary tree, which adds complexity to the implementation.
-2. Increased Complexity of Modifications: Modifying a threaded binary tree, such as inserting or deleting nodes, requires updating the thread information correctly, which can be more intricate than in a regular binary tree.
-3. Increased Memory Overhead: Threaded binary trees may require additional memory space to store thread information alongside the node data, which can increase memory overhead compared to a regular binary tree.
+1. Complexity of Construction: 
+	Constructing a threaded binary tree requires additional steps compared to a regular binary tree, 
+	which adds complexity to the implementation.
+2. Increased Complexity of Modifications: 
+	Modifying a threaded binary tree, such as inserting or deleting nodes, 
+	requires updating the thread information correctly, which can be more intricate than in a 
+	regular binary tree.
+3. Increased Memory Overhead: 
+	Threaded binary trees may require additional memory space to store thread information 
+	alongside the node data, which can increase memory overhead compared to a regular binary tree.
 
-Overall, threaded binary trees offer advantages in terms of efficient in-order traversal and simplified tree operations. However, they also introduce complexities in construction and modifications, as well as potential memory overhead. 
-The decision to use a threaded binary tree depends on the specific requirements and trade-offs of the application. */
+Overall, threaded binary trees offer advantages in terms of efficient in-order traversal 
+and simplified tree operations. However, they also introduce complexities in construction and modifications, 
+as well as potential memory overhead. 
+The decision to use a threaded binary tree depends on the specific requirements and 
+trade-offs of the application. */
 
 //-----SnehuD-----
