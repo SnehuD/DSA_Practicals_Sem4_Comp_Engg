@@ -1,4 +1,4 @@
-/*  Givensequencek=k1<k2<… withasearchprobabilitypiforeach key ki . Build the 
+/*  Givensequencek=k1<k2<â€¦ withasearchprobabilitypiforeach key ki . Build the 
 Binary search tree that has the least search cost given the access probability for each 
 key? */
 #include <iostream>
@@ -71,7 +71,9 @@ void print(int l1, int r1) {
   return;
 }
 /* Optimal Binary Search Tree (OBST):
-An Optimal Binary Search Tree, also known as a Weighted Binary Search Tree, is a binary search tree that minimizes the average search time for a given set of keys. In an OBST, frequently accessed keys are placed near the root, reducing the average search time.
+An Optimal Binary Search Tree, also known as a Weighted Binary Search Tree, 
+is a binary search tree that minimizes the average search time for a given set of keys. 
+In an OBST, frequently accessed keys are placed near the root, reducing the average search time.
 
 Algorithm for constructing an OBST:
 1. Sort the keys in increasing order of their probabilities or frequencies.
@@ -79,7 +81,8 @@ Algorithm for constructing an OBST:
 3. Compute the cumulative probabilities of the keys and store them in a separate array.
 4. Iterate over the matrix diagonally and fill in the values as follows:
    - For each sub-tree size, calculate the optimal cost of constructing a tree rooted at each possible key.
-   - The optimal cost is determined by considering all possible roots and their corresponding left and right sub-trees.
+   - The optimal cost is determined by considering all possible roots and their corresponding 
+     left and right sub-trees.
    - Store the minimum cost and the corresponding root for each sub-tree size and position in the matrix.
 5. Repeat step 4 until the entire matrix is filled.
 6. The top-right cell of the matrix will contain the optimal cost of constructing the OBST.
@@ -90,8 +93,10 @@ The time complexity of constructing an OBST using the above algorithm is O(n^3),
 
 The space complexity is O(n^2) since we need to store the matrix of size n x n.
 
-The algorithm's efficiency can be improved by using memoization techniques or dynamic programming, which allow us to avoid redundant calculations and reduce the time complexity to O(n^2).
+The algorithm's efficiency can be improved by using memoization techniques or dynamic programming, 
+which allow us to avoid redundant calculations and reduce the time complexity to O(n^2).
 
-Overall, constructing an OBST involves dynamic programming principles and can efficiently optimize search time for a given set of keys with their associated probabilities or frequencies. */
+Overall, constructing an OBST involves dynamic programming principles and can efficiently optimize search time 
+for a given set of keys with their associated probabilities or frequencies. */
 
 //-----SnehuD-----
