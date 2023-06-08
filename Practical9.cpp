@@ -260,28 +260,53 @@ int main() {
   } while (ch != 6);
   return 0;
 }
+
 /* AVL Tree:
-An AVL tree is a self-balancing binary search tree that maintains its height-balancing property. It ensures that the heights of the left and right subtrees of any node differ by at most one. This balancing property helps keep the tree height logarithmic and ensures efficient search, insert, and delete operations.
+An AVL tree is a self-balancing binary search tree that maintains its height-balancing property. 
+It ensures that the heights of the left and right subtrees of any node differ by at most one. 
+This balancing property helps keep the tree height logarithmic and ensures efficient search, 
+insert, and delete operations.
 
 Operations in an AVL Tree:
-1. Search: Start from the root and compare the search key with the current node. If the key matches, return the node. If the key is smaller, move to the left child; if larger, move to the right child. Repeat this process until the key is found or the appropriate null child is reached.
+1. Search: 
+Start from the root and compare the search key with the current node. 
+If the key matches, return the node. If the key is smaller, move to the left child; 
+if larger, move to the right child. 
+Repeat this process until the key is found or the appropriate null child is reached.
 
-2. Insert: First, perform a regular binary search tree insert operation to place the new node in the correct position based on the key value. After the insertion, check the balancing factor of each node on the path from the newly inserted node to the root. If any node is unbalanced (balance factor > 1 or < -1), perform appropriate rotations to restore balance.
+2. Insert: 
+First, perform a regular binary search tree insert operation to place the new node 
+in the correct position based on the key value. 
+After the insertion, check the balancing factor of each node on the path from the newly inserted node to the root. 
+If any node is unbalanced (balance factor > 1 or < -1), perform appropriate rotations to restore balance.
 
-3. Delete: Perform a regular binary search tree delete operation to remove the node. After deletion, check the balancing factor of each node on the path from the deleted node to the root. If any node is unbalanced, perform rotations to restore balance.
+3. Delete: 
+Perform a regular binary search tree delete operation to remove the node. 
+After deletion, check the balancing factor of each node on the path from the deleted node to the root. 
+If any node is unbalanced, perform rotations to restore balance.
 
 AVL Rotations:
-1. Left Rotation: Perform a left rotation on a node to balance its right-heavy subtree. This operation preserves the binary search tree property and updates the heights of the affected nodes.
+1. Left Rotation: 
+Perform a left rotation on a node to balance its right-heavy subtree. 
+This operation preserves the binary search tree property and updates the heights of the affected nodes.
 
-2. Right Rotation: Perform a right rotation on a node to balance its left-heavy subtree. This operation also preserves the binary search tree property and updates the heights of the affected nodes.
+2. Right Rotation: 
+Perform a right rotation on a node to balance its left-heavy subtree. 
+This operation also preserves the binary search tree property and updates the heights of the affected nodes.
 
-3. Left-Right Rotation (LR Rotation): Perform a left rotation on the node's left child, followed by a right rotation on the node itself. This rotation is used to balance a node with a left-heavy subtree and a right child.
+3. Left-Right Rotation (LR Rotation): 
+Perform a left rotation on the node's left child, followed by a right rotation on the node itself. 
+This rotation is used to balance a node with a left-heavy subtree and a right child.
 
-4. Right-Left Rotation (RL Rotation): Perform a right rotation on the node's right child, followed by a left rotation on the node itself. This rotation is used to balance a node with a right-heavy subtree and a left child.
+4. Right-Left Rotation (RL Rotation): 
+Perform a right rotation on the node's right child, followed by a left rotation on the node itself. 
+This rotation is used to balance a node with a right-heavy subtree and a left child.
 
-AVL rotations are performed to maintain the balance of the tree after insertions or deletions. These rotations help redistribute the nodes and keep the tree height balanced, ensuring efficient operations.
+AVL rotations are performed to maintain the balance of the tree after insertions or deletions. 
+These rotations help redistribute the nodes and keep the tree height balanced, ensuring efficient operations.
 
 Overall, AVL trees provide a self-balancing mechanism that guarantees efficient search, insert, 
-and delete operations in logarithmic time, making them suitable for applications where frequent modifications to the tree are expected. */
+and delete operations in logarithmic time, making them suitable for applications where 
+frequent modifications to the tree are expected. */
 
 //-----SnehuD-----
