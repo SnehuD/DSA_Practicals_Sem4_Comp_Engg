@@ -235,10 +235,12 @@ void BST::search(node *ptr, int searchdata) {
   }
 }
 /* Binary Search Tree (BST):
-- A Binary Search Tree is a binary tree data structure in which each node has a key/value and follows a specific ordering property:
+- A Binary Search Tree is a binary tree data structure in which each node has a key/value 
+and follows a specific ordering property:
   - The key in the left child is less than the key in its parent node.
   - The key in the right child is greater than the key in its parent node.
-- This ordering property allows for efficient searching, insertion, and deletion operations in logarithmic time complexity on average.
+- This ordering property allows for efficient searching, insertion, and deletion operations 
+in logarithmic time complexity on average.
 
 Inserting a Node in a BST:
 - To insert a node in a BST:
@@ -251,7 +253,9 @@ Inserting a Node in a BST:
   - Insert the new node as the left or right child of the last node reached.
 
 Finding the Minimum Value in a BST:
-- The minimum value in a BST is found by repeatedly moving to the left child until reaching the leftmost node.
+- The minimum value in a BST is found by repeatedly moving to the left child until 
+reaching the leftmost node.
+
 - To find the minimum value:
   - Start at the root node.
   - Move to the left child until reaching a node with no left child.
@@ -259,13 +263,15 @@ Finding the Minimum Value in a BST:
 
 Mirroring a BST:
 - The mirror image of a BST is obtained by swapping the left and right children of each node recursively.
+
 - To mirror a BST:
   - Start at the root node.
   - Swap the left and right children of the current node.
   - Recursively mirror the left and right subtrees.
 
 Time and Space Complexity:
-- The time complexity for inserting a node, finding the minimum value, or mirroring a BST is O(h), where h is the height of the tree.
+- The time complexity for inserting a node, finding the minimum value, 
+or mirroring a BST is O(h), where h is the height of the tree.
 - In a balanced BST, the height is logarithmic to the number of nodes (h = log2(n)).
 - The space complexity is O(h) due to the recursive calls on the function call stack. */
 
