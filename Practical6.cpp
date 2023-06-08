@@ -96,7 +96,10 @@ int main() {
   return 0;
 }
 /* Graph:
-A graph is a non-linear data structure that consists of a set of vertices (nodes) connected by edges. Graphs are used to represent relationships and connections between objects. They can be used to model real-world scenarios such as social networks, transportation networks, and computer networks.
+A graph is a non-linear data structure that consists of a set of vertices (nodes) connected by edges. 
+Graphs are used to represent relationships and connections between objects. 
+They can be used to model real-world scenarios such as social networks, transportation networks, 
+and computer networks.
 
 Types of Graphs:
 1. Directed Graph (Digraph): A graph in which edges have a specific direction.
@@ -108,7 +111,8 @@ Representation of Graph using Adjacency Matrix:
 - An adjacency matrix is a 2D array of size V x V, where V is the number of vertices in the graph.
 - The value at matrix[i][j] represents the presence or absence of an edge between vertices i and j.
 - For an unweighted graph, the value can be 0 or 1.
-- For a weighted graph, the value can be the weight of the edge or a special value (e.g., infinity) to represent the absence of an edge.
+- For a weighted graph, the value can be the weight of the edge or a special value 
+(e.g., infinity) to represent the absence of an edge.
 
 Representation of Graph using Adjacency List:
 - An adjacency list is a collection of linked lists or arrays.
@@ -130,6 +134,7 @@ Depth-First Search (DFS):
 In summary, a graph is a data structure consisting of vertices and edges. 
 It can be represented using an adjacency matrix or adjacency list. 
 BFS and DFS are graph traversal algorithms used to visit all vertices in different orders. 
-BFS is used for finding the shortest path, while DFS is used for detecting cycles and exploring connected components. */
+BFS is used for finding the shortest path, while 
+DFS is used for detecting cycles and exploring connected components. */
 
 //-----SnehuD-----
