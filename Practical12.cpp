@@ -133,25 +133,37 @@ int main() {
 
     return 0;
 }
-/* Indexed Sequential Access Method (ISAM) is an advanced file organization technique that combines the benefits of sequential access and indexed access to provide efficient data retrieval and storage.
+/* Indexed Sequential Access Method (ISAM) is an advanced file organization technique that combines 
+the benefits of sequential access and indexed access to provide efficient data retrieval and storage.
 
-In ISAM, the file is divided into fixed-length blocks or pages, and each block is assigned a unique index key value. These index key values are stored in an index file, along with their corresponding block addresses. The index file serves as a guide to quickly locate the desired data blocks in the sequential file.
+In ISAM, the file is divided into fixed-length blocks or pages, and each block is assigned a unique index key value. 
+These index key values are stored in an index file, along with their corresponding block addresses. 
+The index file serves as a guide to quickly locate the desired data blocks in the sequential file.
 
 Advantages of ISAM:
-1. Efficient Retrieval: ISAM allows for fast and direct access to specific data blocks through the index file, making retrieval operations efficient even for large files.
-2. Sequential Access: ISAM maintains the sequential order of data within each block, making it suitable for applications that require sequential processing of records.
-3. Indexing: The use of indexes enables efficient search operations, as the index file provides a way to locate specific data blocks based on the index key values.
-4. Space Efficiency: ISAM minimizes storage overhead by organizing data into fixed-length blocks and maintaining indexes separately, optimizing storage space usage.
+1. Efficient Retrieval: ISAM allows for fast and direct access to specific data blocks through the index file, 
+   making retrieval operations efficient even for large files.
+2. Sequential Access: ISAM maintains the sequential order of data within each block, 
+   making it suitable for applications that require sequential processing of records.
+3. Indexing: The use of indexes enables efficient search operations, 
+   as the index file provides a way to locate specific data blocks based on the index key values.
+4. Space Efficiency: ISAM minimizes storage overhead by organizing data into fixed-length blocks and 
+   maintaining indexes separately, optimizing storage space usage.
 
 Disadvantages of ISAM:
-1. Insertion and Deletion Overhead: Inserting or deleting records in ISAM requires updating the index file and potentially redistributing data blocks, which can result in additional overhead and slower performance compared to simple sequential file organization.
-2. Limited Flexibility: ISAM is not well-suited for frequent record insertions or deletions, as these operations can disrupt the sequential order and require reorganization of data blocks.
-3. Index Maintenance: The index file needs to be constantly updated to reflect changes in the data file, which adds complexity and overhead to the file management process.
+1. Insertion and Deletion Overhead: Inserting or deleting records in ISAM requires updating the index file 
+   and potentially redistributing data blocks, which can result in additional overhead and slower performance 
+   compared to simple sequential file organization.
+2. Limited Flexibility: ISAM is not well-suited for frequent record insertions or deletions, 
+   as these operations can disrupt the sequential order and require reorganization of data blocks.
+3. Index Maintenance: The index file needs to be constantly updated to reflect changes in the data file, 
+   which adds complexity and overhead to the file management process.
 
-ISAM offers a balance between efficient indexed access and sequential processing, making it suitable for applications that require fast retrieval based 
+ISAM offers a balance between efficient indexed access and sequential processing, 
+making it suitable for applications that require fast retrieval based 
 on specific criteria while still benefiting from sequential data processing within each block. 
-However, its limitations in handling frequent insertions and deletions and the additional overhead of maintaining indexes 
+However, its limitations in handling frequent insertions and deletions and the 
+additional overhead of maintaining indexes 
 should be considered when choosing an appropriate file organization method. */
 
 //-----SnehuD-----
-
