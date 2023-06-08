@@ -86,17 +86,29 @@ int main() {
   return 0;
 }
 /* Binary Heap:
-A binary heap is a complete binary tree that satisfies the heap property. In a min heap, for any given node, the value of the node is smaller than or equal to the values of its children. In a max heap, the value of the node is greater than or equal to the values of its children. Binary heaps are commonly used to implement priority queues.
+A binary heap is a complete binary tree that satisfies the heap property. 
+In a min heap, for any given node, the value of the node is smaller than or equal to the values of its children. 
+In a max heap, the value of the node is greater than or equal to the values of its children. 
+Binary heaps are commonly used to implement priority queues.
 
 Operations on Heap:
-1. Insertion: To insert a new element in the heap, it is placed at the next available position in the bottom level and then "bubbled up" by swapping it with its parent until the heap property is satisfied.
+1. Insertion: 
+To insert a new element in the heap, it is placed at the next available position in the bottom level 
+and then "bubbled up" by swapping it with its parent until the heap property is satisfied.
 
-2. Deletion: The deletion operation removes the root element from the heap. The last element in the bottom level is moved to the root position, and then it is "bubbled down" by swapping it with the smaller (in a min heap) or larger (in a max heap) child until the heap property is satisfied.
+2. Deletion: 
+The deletion operation removes the root element from the heap. 
+The last element in the bottom level is moved to the root position, and then it is "bubbled down" 
+by swapping it with the smaller (in a min heap) or larger (in a max heap) child until the heap property is satisfied.
 
-3. Peek: The peek operation returns the value of the root element without removing it from the heap.
+3. Peek: 
+The peek operation returns the value of the root element without removing it from the heap.
 
 Heap Sort:
-Heap sort is a comparison-based sorting algorithm that uses a binary heap data structure. It sorts an array by building a max heap or min heap from the elements and then repeatedly extracting the root element, which is the maximum or minimum, depending on the type of heap. The extracted element is placed at the end of the sorted portion of the array.
+Heap sort is a comparison-based sorting algorithm that uses a binary heap data structure. 
+It sorts an array by building a max heap or min heap from the elements and then repeatedly extracting 
+the root element, which is the maximum or minimum, depending on the type of heap. 
+The extracted element is placed at the end of the sorted portion of the array.
 
 Algorithm for Heap Sort:
 1. Build a max heap or min heap from the given array.
@@ -108,7 +120,8 @@ Algorithm for Heap Sort:
 
 Complexity Analysis:
 - Building a heap takes O(n) time, where n is the number of elements.
-- Extracting the root and restoring the heap property takes O(log n) time, and since it is performed n times, the overall time complexity is O(n log n).
+- Extracting the root and restoring the heap property takes O(log n) time, 
+  and since it is performed n times, the overall time complexity is O(n log n).
 - The space complexity is O(1) since the sorting is performed in-place.
 
 Heap sort has a good average and worst-case time complexity, making it an efficient sorting algorithm. 
