@@ -87,6 +87,7 @@ int main() {
   }
   return 0;
 }
+
 /* Theory on Trees:
 - A tree is a hierarchical data structure that consists of nodes connected by edges.
 - Each node can have zero or more child nodes.
@@ -100,9 +101,12 @@ Types of Trees:
 
 Types of Binary Trees:
 1. Full Binary Tree: A binary tree where every node has either 0 or 2 children.
-2. Complete Binary Tree: A binary tree where all levels except the last are completely filled, and nodes are left-aligned.
-3. Perfect Binary Tree: A binary tree where all internal nodes have two children, and all leaf nodes are at the same level.
-4. Balanced Binary Tree: A binary tree where the height of the left and right subtrees of any node differs by at most one.
+2. Complete Binary Tree: A binary tree where all levels except the last are completely filled, 
+and nodes are left-aligned.
+3. Perfect Binary Tree: A binary tree where all internal nodes have two children, 
+and all leaf nodes are at the same level.
+4. Balanced Binary Tree: A binary tree where the height of the left and right subtrees of any node 
+differs by at most one.
 
 Tree Traversal:
 - Tree traversal is the process of visiting all nodes in a tree.
